@@ -1,5 +1,19 @@
 # Micropython on an ESP32 Microcontroller
 
+This site is a guide for getting started using Micropython on an ESP32. We start off with the pages which make up this tutorial. A bit further down the page are some details of what we will use in the project, as well as what we can do and some notes on using a breadboard.
+
+## How to use these pages
+1. Start off at the [Setup page](./setup.md).
+
+    For the first parts, you only need to follow through the section [Connecting via Serial](./setup.md#setup-serial)
+
+2. Have a look at [A Simple Circuit](./simple_circuit.md).
+
+3. To do more advanced things, we need to set up VSCode to work with the ESP32 - have a look at the [Setup VSCode section of setup](./setup.md#setup-vscode)
+
+4. Next can write more complicated programs, which don't require input from us to run (necessarily). Getting started with this is covered on the  [Project page](./project.md). *This bit is work in progress!*
+
+
 ## Getting Started
 
 Hopefully what you have in front of you are the following parts:
@@ -24,17 +38,6 @@ Hopefully what you have in front of you are the following parts:
 The ESP32 allows you to run a (fairly comprehensive) subset of Python 3 code on the microcontroller. It also gives you direct access to the GPIO pins on the sides of the ESP32, which measn you can read from sensors or switches or slight LEDs, make noise with a buzzer etc. etc.
 
 The ESP32 can be connected to your laptop using the USB cable. You can access the Read Evaluate Print Loop (REPL) of Micropython over this connection - details of how to get access to this are on the [setup](./setup.md) page. The Micropython REPL is just like the prompt in iPython or the prompt you can get to when you type python on the command line (it's actually essentially identical to the python prompt). The big difference is that the code you type runs on the ESP32, **not** on your laptop.
-
-## How to use these pages
-1. Start off at the [Setup page](./setup.md).
-
-    For the first parts, you only need to follow through the section [Connecting via Serial](./setup.md#setup-serial)
-
-2. Have a look at [A Simple Circuit](./simple_circuit.md).
-
-3. To do more advanced things, we need to set up VSCode to work with the ESP32 - have a look at the [Setup VSCode section of setup](./setup.md#setup-vscode)
-
-4. Next can write more complicated programs, which don't require input from us to run (necessarily). Getting started with this is covered on the  [Project page](./project.md). *This bit is work in progress!*
 
 
 ### What can you do with this?
