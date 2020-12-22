@@ -3,7 +3,7 @@ Essentially you can do anything you would otherwise do in normal python code! It
 
 
 ## Controlling an LED from the REPL Prompt
-Before you begin, disconnect the ESP32 from the computer from the USB port. It's worth looking through the [getting started](./getting_started.md) to make sure everything is clear first. 
+Before you begin, disconnect the ESP32 from the computer from the USB port. It's worth looking through the [getting started](./index.md) to make sure everything is clear first. 
 
 For this simple setup, you will need:
 - the breadboard
