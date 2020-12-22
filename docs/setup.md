@@ -5,7 +5,7 @@ There are two ways to interact with Micropython installed on the ESP32. The firs
 We'll begin with connecting to the ESP32 by the serial connection, as this is the most straightforward. For this you will need to install [MobaXterm](https://www.mobatek.net).
 
 ### Install MobaXterm
-1. Go to the download page for MobaXterm: https://mobaxterm.mobatek.net/download-home-edition.html
+1. Go to the download page for MobaXterm: [https://mobaxterm.mobatek.net/download-home-edition.html]
 
     ![MobaXterm downloads page](./resources/setup/firefox_mobatekdownloadpage.PNG)
 
@@ -13,6 +13,7 @@ We'll begin with connecting to the ESP32 by the serial connection, as this is th
 3. Once it's downloaded, double click on the zip file (mine was in Downloads and was called `MobaXterm_Installer_v20.6.zip`) and extract the contents somewhere (you can't just double click on the installer in the zip, I tried!). You can click on the `Extract All` button to extract both files:
     
     ![Contents of MobaXterm installer zip](./resources/setup/mobaxterminstaller.PNG)
+
     ![Extract all prompt](./resources/setup/mobaxterminstaller_extractall.PNG)
 
 4. If you ticked the `Show extracted files when complete` checkbox in the Extract All prompt, a new Explorer window opens with the two files in it. Otherwise find where you extracted the files to.
@@ -70,13 +71,13 @@ We'll begin with connecting to the ESP32 by the serial connection, as this is th
 9. On the left hand side of the MobaXterm screen you should see a new option under *User sessions*. In my case it's labelled: `COM5 (Silicon Labs CP210x USB to UART Bridge (COM5))`. Next time you start MobaXterm (with the ESP32 connected), you can simply double click on this line to start the REPL.
 
 ## Setup VSCode <a id="setup-vscode"></a>
-*This next section is a bit more advanced and we don't need it for the first part, messing about with LEDs*
+*This next section is a bit more advanced and we don't need it for the first part, messing about with LEDs.*
 
 To allow us to write python code and upload it onto the ESP32, we are going to install the [PyMakr](https://docs.pycom.io/gettingstarted/software/vscode/) VSCode extension. PyMakr needs [Node.js](https://nodejs.org/) installed on the computer to run, so we'll install that first...
 For the minute, **make sure your ESP32 is not connected the the USB**.
 
 ### Install Node.js
-1. Download Node.js from https://nodejs.org/ - as of 05.12.2020, the current Long-Term Support (LTS) version, 14.15. Click the link on the left of the Node.js homepage:
+1. Download Node.js from [https://nodejs.org/] - as of 05.12.2020, the current Long-Term Support (LTS) version, 14.15. Click the link on the left of the Node.js homepage:
 
     ![nodejs website in Firefox](./resources/setup/firefox_nodejs.PNG)
 
