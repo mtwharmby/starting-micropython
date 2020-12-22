@@ -18,7 +18,7 @@ For this simple setup, you will need:
     
     - It's **important** that only the two wires go across the middle groove. Do not connect any of the other components over the groove!
     
-    ![Ground wire](resources/simple_circuit/01-ground-wire.jpg)
+        ![Ground wire](resources/simple_circuit/01-ground-wire.jpg)
 
 The two legs of the LED are different lengths. The shorter of these should be connected to the ground (negative) and the longer should be connected to the supply voltage (positive).
 - I remember this by thinking of the negative symbol being made of one bar (-) whereas the positive symbol is made of two (+ = --), which when laid out next to each other makes a longer bar.
