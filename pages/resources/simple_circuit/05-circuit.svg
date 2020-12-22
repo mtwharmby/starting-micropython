@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   inkscape:export-ydpi="150"
+   inkscape:export-xdpi="150"
+   inkscape:export-filename="C:\sw-dev\misc-ws_git\esp32-micropython.git\www\resources\simplecircuit\05-circuit.png"
+   sodipodi:docname="05-circuit.svg"
+   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
+   id="svg8"
+   version="1.1"
+   viewBox="0 0 79.925331 79.925331"
+   height="79.925331mm"
+   width="79.925331mm">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     fit-margin-bottom="0"
+     fit-margin-right="0"
+     fit-margin-left="0"
+     fit-margin-top="0"
+     showgrid="false"
+     inkscape:document-rotation="0"
+     inkscape:current-layer="layer1"
+     inkscape:document-units="mm"
+     inkscape:cy="169.70908"
+     inkscape:cx="280.13936"
+     inkscape:zoom="2.2480704"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     borderopacity="1.0"
+     bordercolor="#666666"
+     pagecolor="#ffffff"
+     id="base" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     transform="translate(-33.364716,-65.870667)"
+     id="layer1"
+     inkscape:groupmode="layer"
+     inkscape:label="Layer 1">
+    <image
+       sodipodi:absref="C:\Users\michael\Pictures\micropy\wiring\04-signal-wire.jpg"
+       xlink:href="../../../../../../Users/michael/Pictures/micropy/wiring/04-signal-wire.jpg"
+       y="65.870667"
+       x="33.364716"
+       width="79.925331"
+       height="79.925331"
+       preserveAspectRatio="none"
+       style="image-rendering:optimizeQuality"
+       id="image20" />
+    <path
+       sodipodi:nodetypes="cc"
+       id="path24"
+       d="m 72.571107,114.45294 -0.84245,7.34136"
+       style="fill:none;stroke:#e5ff00;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <path
+       inkscape:transform-center-y="4.2122534"
+       inkscape:transform-center-x="5.2954043"
+       style="fill:none;stroke:#e5ff00;stroke-width:0.499999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 89.859429,118.06342 -0.186198,4.99456"
+       id="path24-8"
+       sodipodi:nodetypes="cc" />
+    <path
+       sodipodi:nodetypes="cc"
+       id="path24-8-7"
+       d="m 90.067066,114.75579 -0.13957,2.43006"
+       style="fill:none;stroke:#e5ff00;stroke-width:0.499999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       inkscape:transform-center-x="5.2954043"
+       inkscape:transform-center-y="4.2122534" />
+    <path
+       inkscape:transform-center-y="4.2122534"
+       inkscape:transform-center-x="5.2954043"
+       style="fill:none;stroke:#e5ff00;stroke-width:0.499999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 82.100216,122.42409 -0.13957,2.43006"
+       id="path24-8-7-5"
+       sodipodi:nodetypes="cc" />
+    <path
+       sodipodi:nodetypes="cc"
+       id="path24-8-7-5-4"
+       d="m 59.622709,95.646742 -0.13957,2.43006"
+       style="fill:none;stroke:#e5ff00;stroke-width:0.499999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       inkscape:transform-center-x="5.2954043"
+       inkscape:transform-center-y="4.2122534" />
+    <path
+       sodipodi:nodetypes="cc"
+       id="path24-8-7-5-5"
+       d="m 74.452093,96.823677 -0.13957,2.43006"
+       style="fill:none;stroke:#e5ff00;stroke-width:0.499999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       inkscape:transform-center-x="5.2954043"
+       inkscape:transform-center-y="4.2122534" />
+  </g>
+</svg>
