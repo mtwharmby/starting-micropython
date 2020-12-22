@@ -1,0 +1,2 @@
+# Starting Micropython
+This project documents starting off using Micropython on an ESP32. The Micropython image and all the code we're writing will be stored in the repository. Documentation for what and how we're doing is in the pages directory and (hopefully!) on github pages too.
