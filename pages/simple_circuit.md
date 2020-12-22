@@ -15,6 +15,7 @@ For this simple setup, you will need:
 2. Next to the *3v3* pin there is one labelled *GND* (*GrouND*). Put one of the connecting wires into the a hole on the breadboard in the same row as this. The other connect the other end of this wire to a hole on the other side of the groove in the middle of the bread board:
 
     ![Ground wire connection](resources/simple_circuit/01-ground-wire-terminal.jpg)
+    
     - It's **important** that only the two wires go across the middle groove. Do not connect any of the other components over the groove!
     
     ![Ground wire](resources/simple_circuit/01-ground-wire.jpg)
@@ -27,10 +28,13 @@ The two legs of the LED are different lengths. The shorter of these should be co
 3. Push the shorter leg of the LED into a hole in the board in the same row as you plugged in the wire from the *GND*. Put the other leg into a hole in a different row.
 
     ![LED and ground wire connected](resources/simple_circuit/02-led-bb.jpg)
+
 4. Bend the legs on the resistor so that the whole thing makes a U-shape and push one of the legs into a hole on the same row as the longer LED leg. Choose a hole in a third different row for the other leg of the resistor (it doesn't matter which way round the resistor is connected). 
 
     ![Resistor, LED and ground wire in breadboard](resources/simple_circuit/03-resistor.jpg)
+
 5. Take your second wire and connect one end to a hole in the same row as the unconnected leg of the resistor. The other end of the wire should be connected into a a hole in the same row as the *D5* pin on the ESP32, on the same side of the middle groove as the ESP32. Pin *D5* is the 8th pin along the side of the board from the *3V3* pin.
+
     ![Everything wired together](resources/simple_circuit/04-signal-wire.jpg)
 
     And here's a close-up of the connections at the ESP-32:
@@ -38,6 +42,7 @@ The two legs of the LED are different lengths. The shorter of these should be co
     ![Signal wire connection](resources/simple_circuit/04-signal-wire-terminal.jpg)
 
     The next picture shows the complete electrical circuit. The yellow lines indicate where the current flows. The important thing here is that the current flows only along the rows (short direction):
+
     ![Completed electrical circuit](resources/simple_circuit/05-circuit.jpg)
     
     If it doesn't work in the next step:

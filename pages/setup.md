@@ -6,35 +6,54 @@ We'll begin with connecting to the ESP32 by the serial connection, as this is th
 
 ### Install MobaXterm
 1. Go to the download page for MobaXterm: https://mobaxterm.mobatek.net/download-home-edition.html
-![MobaXterm downloads page](./resources/setup/firefox_mobatekdownloadpage.PNG)
+
+    ![MobaXterm downloads page](./resources/setup/firefox_mobatekdownloadpage.PNG)
+
 2. Click on the green `MobaXterm Home Edition v20.6 (Installer edition)` on the right (the version number might be different).
 3. Once it's downloaded, double click on the zip file (mine was in Downloads and was called `MobaXterm_Installer_v20.6.zip`) and extract the contents somewhere (you can't just double click on the installer in the zip, I tried!). You can click on the `Extract All` button to extract both files:
-![Contents of MobaXterm installer zip](./resources/setup/mobaxterminstaller.PNG)
-![Extract all prompt](./resources/setup/mobaxterminstaller_extractall.PNG)
+    
+    ![Contents of MobaXterm installer zip](./resources/setup/mobaxterminstaller.PNG)
+    ![Extract all prompt](./resources/setup/mobaxterminstaller_extractall.PNG)
+
 4. If you ticked the `Show extracted files when complete` checkbox in the Extract All prompt, a new Explorer window opens with the two files in it. Otherwise find where you extracted the files to.
 5. Double click on the installer, `MobaXterm_Installer_v20.6.msi` and follow the prompts in the install wizard:
     - Accept the license. You need to check the checkbox:
-    ![MobaXterm license window - check the checkbox](./resources/setup/mobaxterminstall_license.PNG)
+
+        ![MobaXterm license window - check the checkbox](./resources/setup/mobaxterminstall_license.PNG)
+
     - Confirm the path to install node - the default of `C:\Program Files (x86)\Mobatek\MobaXterm\` is good:
-    ![MobaXterm install path](./resources/setup/mobaXterminstall_installpath.PNG)
+
+        ![MobaXterm install path](./resources/setup/mobaXterminstall_installpath.PNG)
+
 6. Finally, click on the Install button. You may be asked if you are sure you want to run the installer (yes, you do want to!)
 7. At the end of the install, just click finish:
-![MobaXterm install complete](./resources/setup/mobaxterminstall_finished.PNG)
+
+    ![MobaXterm install complete](./resources/setup/mobaxterminstall_finished.PNG)
 
 ### Set-Up a Serial Connection to the ESP32 in MobaXterm
 1. Plug the USB cable into the microUSB port on the ESP32. Connect the other end to a free USB port on your laptop.
 2. Open MobaXterm from the Start Menu.
 3. Once it starts up (be patient, this can take a while on the first go!) you get a window that looks a bit like this:
-![MobaXterm initial window](./resources/setup/mobaxterm_start.PNG)
+
+    ![MobaXterm initial window](./resources/setup/mobaxterm_start.PNG)
+
 4. Click on the *Session* button in the top left corner of the screen.
 5. In the *Session Settings* window, select *Serial*:
-![MobaXterm sessions settings window](./resources/setup/mobaxterm_newsession.PNG)
+
+    ![MobaXterm sessions settings window](./resources/setup/mobaxterm_newsession.PNG)
+
 6. From the "Serial Port *" drop-down menu, choose the option with "Silicon Labs CP210x USB to UART Bridge" in the name. The number after COM is more than likely different to the one in the picture, but that doesn't matter:
-![MobaXterm serial session port selection](./resources/setup/mobaxterm_newserialsession.PNG)
+
+    ![MobaXterm serial session port selection](./resources/setup/mobaxterm_newserialsession.PNG)
+
 7. From the "Speed (bps) \*" drop-down menu, choose 115200. This is the *baud rate* (a la old fashioned Modems!) and needs to be set to the same value as configured on the other end otherwise you will get gibberish on the screen. The ESP32 comes configured with a baud rate of 115200 bits per second (bps) by default:
-![MobaXterm serial session speed selection](./resources/setup/mobaxterm_newserialsessionspeed.PNG)
+
+    ![MobaXterm serial session speed selection](./resources/setup/mobaxterm_newserialsessionspeed.PNG)
+
 8. Finally click OK. You are returned to the MobaXterm window and a whole load of text should scroll down the black part of the window.
-![MobaXterm with Micropython prompt](./resources/setup/mobaxterm_micropythonprompt_upd.PNG)
+
+    ![MobaXterm with Micropython prompt](./resources/setup/mobaxterm_micropythonprompt_upd.PNG)
+    
     We want to get to the Micropython prompt, but something else is currently running (we'll find out what's running later...). To stop the running program, press &#60;Ctrl&#62;+C.
     
     Finally you are left with the `>>>` prompt. This is the REPL and you can enter python code in here to test things out:
@@ -58,33 +77,52 @@ For the minute, **make sure your ESP32 is not connected the the USB**.
 
 ### Install Node.js
 1. Download Node.js from https://nodejs.org/ - as of 05.12.2020, the current Long-Term Support (LTS) version, 14.15. Click the link on the left of the Node.js homepage:
-![nodejs website in Firefox](./resources/setup/firefox_nodejs.PNG)
+
+    ![nodejs website in Firefox](./resources/setup/firefox_nodejs.PNG)
+
 2. Once it's downloaded, double click on the installer (mine was in Downloads and was called `node-v14.15.1-x64.msi`)
 3. Follow the prompts in the install wizard:
     - Accept the license. You need to check the checkbox:
-    ![Node.js license window - check the checkbox](./resources/setup/nodeinstall_license.PNG)
+
+        ![Node.js license window - check the checkbox](./resources/setup/nodeinstall_license.PNG)
+    
     - Confirm the path to install node - the default of `C:\Program Files\nodejs` is good:
-    ![Node.js install path](./resources/setup/nodeinstall_installpath.PNG)
+
+        ![Node.js install path](./resources/setup/nodeinstall_installpath.PNG)
+    
     - Confirm the install options. Again the default is fine:
-    ![Node.js install options](./resources/setup/nodeinstall_customsetup.PNG)
+
+        ![Node.js install options](./resources/setup/nodeinstall_customsetup.PNG)
+    
     - The install asks if you want to install any additional tools. I decided not to, as I don't think we need them. If it turns out we do, then there is a link to instructions on how to install them: https://github.com/nodejs/node-gyp#on-windows
-    ![Install additional build tools](./resources/setup/nodeinstall_nativemodulebuildtools.PNG)
-    If, on the other hand, you do think it would be a good idea to install them, then please go ahead
+
+        ![Install additional build tools](./resources/setup/nodeinstall_nativemodulebuildtools.PNG)
+    
+        If, on the other hand, you do think it would be a good idea to install them, then please go ahead
 4. Finally, click on the Install button. You may be asked if you are sure you want to run the installer (yes, you do want to!)
 5. At the end of the install, just click finish:
-![Node.js install complete](./resources/setup/nodeinstall_finished.PNG)
+
+    ![Node.js install complete](./resources/setup/nodeinstall_finished.PNG)
 
 ### Install PyMakr Extension
 1. Open VSCode and from the File menu choose *New Window*:
-![Open new window in VSCode](./resources/setup/vscode_filenewwindow.PNG)
+
+    ![Open new window in VSCode](./resources/setup/vscode_filenewwindow.PNG)
+
 2. Click on the *Extensions* button, probably at the bottom of the set of icons on the far left of the screen. This will open up the extension manager:
-![VSCode extensions manager](./resources/setup/vscode_extensionmanager.PNG)
+
+    ![VSCode extensions manager](./resources/setup/vscode_extensionmanager.PNG)
+
 3. At the top of the left hand column of the screen there is a search box. Type in here *pymakr* to search for the PyMakr extension:
-![Searching for PyMakr extension](./resources/setup/vscode_pymakrsearch.PNG)
+
+    ![Searching for PyMakr extension](./resources/setup/vscode_pymakrsearch.PNG)
+
 4. Click on the PyMakr extension listed in the search to get the same view as in the screen shot. To install, click on either of the green *Install* buttons (there's one in the search and one in the main part of the window).
     - After clicking on *Install*, the button goes blue and reads *Installing*. Wait until the text changes again to *Uninstall*. At this point PyMakr is installed.
 5. After a few moments the VSCode shows the pymakr.json file, which contains the configuration for the extension:
-![pymakr.json in VSCode after the installation of the extension](./resources/setup/vscode_pymakrjson.PNG)
+
+    ![pymakr.json in VSCode after the installation of the extension](./resources/setup/vscode_pymakrjson.PNG)
+
 6. Towards the bottom of the file there is a line which reads `"autoconnect_comport_manufacturers": [` followed by a list of names. This is the list of device manufacturers which PyMakr will connect to (actually it's the manufacturer of the Serial port hardware). If you remember from setting up MobaXterm, our ESP32 had the name "Silicon Labs CP210x USB to UART Bridge". We need to add "Silicon Labs" to the list. To do this:
     - Find the last name in the list (mine was `"Microchip Technology, Inc."`) and add a comma to the end of this line: `"Microchip Technology, Inc.",`
     - Add a new line which reads `"Silicon Labs"`. Note this doesn't need a comma.
@@ -114,8 +152,10 @@ For the minute, **make sure your ESP32 is not connected the the USB**.
     ![PyMakr options in VSCode status bar](./resources/setup/vscode_statusbar.PNG)
 
 9. Plug in the ESP32 to a USB port and click on the *&#x2715; PyMakr Console* button in the status bar a the bottom. The terminal probably print something like *Connecting to COM5...* followed by the `>>>` REPL prompt indicator. If you don't see a `>>>`, try pressing &#60;Ctrl&#62;+C:
-![PyMakr REPL prompt](./resources/setup/vscode_pymakrconnected.PNG)
-At this point you can just type python commands in to the REPL as you could through MobaXterm:
+
+    ![PyMakr REPL prompt](./resources/setup/vscode_pymakrconnected.PNG)
+    
+    At this point you can just type python commands in to the REPL as you could through MobaXterm:
     - You can check everything is working by entering the following code:
         ```python
         >>> import sys

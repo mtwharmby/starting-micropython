@@ -1,16 +1,20 @@
-# MicroPython on an ESP32 Microcontroller
+# Micropython on an ESP32 Microcontroller
 
 Hopefully what you have in front of you are the following parts:
 1.  An Espressif ESP32, with [MicroPython](https://micropython.org/) v1.13 installed:
+
     ![ESP32 Microcontroller](./pages/resources/getting_started/esp32.jpg)
 
-2. Electronics kit (from ELEGOO - full details on their [website](https://www.elegoo.com/products/elegoo-electronics-fun-kits-4-versions))
+2. Electronics kit (from ELEGOO - full details on their [website](https://www.elegoo.com/products/elegoo-electronics-fun-kits-4-versions)):
+
     ![Überarbeitetes Elektronik Lernset Spaßset](./pages/resources/getting_started/elegoo_electronics_kit.jpg)
 
 3. A Bosch BME280 temperature, humidity and pressure sensor:
+
     ![BME280 sensor](./pages/resources/getting_started/bme280.jpg)
 
 4. An Avago Technologies APDS-9960 gesture sensor - can sense proximity, light, colour (RGB) and gestures:
+
     ![APDS-9960 sensor](./pages/resources/getting_started/apds9960.jpg)
 
 5. A USB cable (with micro plug on one end).
@@ -22,7 +26,7 @@ The ESP32 can be connected to your laptop using the USB cable. You can access th
 ## How to use these pages
 1. Start off at the [Setup page](./pages/setup.md).
 
-    For the first parts, you only need to follow through the section[Connecting via Serial](./pages/setup.md#setup-serial)
+    For the first parts, you only need to follow through the section [Connecting via Serial](./pages/setup.md#setup-serial)
 
 2. Have a look at [A Simple Circuit](./pages/simple_circuit.md).
 
@@ -67,7 +71,7 @@ Numbering from the numbered list above:
 
 2. The ELEGOO Electronics Kit comes with an [Arduino focussed PDF](./pages/resources/getting_started/Electronics%20Fun%20Kit%20V1.0.19.03.25.pdf), which might be interesting as there's some ideas of simple circuits you can try out.
     
-        Just remember the code in the PDF is written for Arduino and not MicroPython, so it won't work on the ESP32 as is!
+    Just remember the code in the PDF is written for Arduino and not MicroPython, so it won't work on the ESP32 as is!
     - As well as the PDF there are also a whole load of datasheets, which might be helpful. Everything is included in a [Zip file](./pages/resources/getting_started/Elegoo%20Electronics%20Fun%20Kit%20V1.0.19.09.10.zip).
 
 3. The BME280 has lots of resources for using this with Arduino (e.g. from [SparkFun](https://learn.sparkfun.com/tutorials/sparkfun-bme280-breakout-hookup-guide/all)).
