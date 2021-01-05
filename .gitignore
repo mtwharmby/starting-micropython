@@ -139,3 +139,6 @@ cython_debug/
 
 # Windows Python environment
 wenv
+
+# I explicitly do not wish to upload these files:
+Elegoo Electronics Fun Kit V1.0.19.09.10.zip

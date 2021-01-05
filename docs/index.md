@@ -70,14 +70,19 @@ A [Breadboard Power Supply Module](https://components101.com/modules/5v-mb102-br
 - **Be careful where the power goes with regard to the ESP32!**
 - **Set the jumpers on either side of the module to 3.3V unless you need 5V for something to avoid damage!**
 
+## Pinout
+The ESP32 is specifically DEVKITv1 and we're using is a 30-pin version, with 15 pins down each side. For reference, the chip is a WROOM-32. The pinout for this chip is shown below:
+
+![ESP32 DEVKITv1 30-pin pinout](./resources/getting_started/ESP32-pinout.jpg)
+
 
 ## More Detailed Information - For Reference
 Numbering from the numbered list above:
 
-2. The ELEGOO Electronics Kit comes with an [Arduino focussed PDF](./resources/getting_started/Electronics%20Fun%20Kit%20V1.0.19.03.25.pdf), which might be interesting as there's some ideas of simple circuits you can try out.
+2. The ELEGOO Electronics Kit comes with an [Arduino focussed PDF](./resources/getting_started/Electronics%20Fun%20Kit%20V1.0.19.03.25.pdf) (provided by ELEGOO), which might be interesting as there's some ideas of simple circuits you can try out.  <!-- PDF was extracted from "Elegoo Electronics Fun Kit V1.0.19.09.10.zip". It has not been modified and is merely provided here as a convenience. The PDF is (almost certainly) copyright of ELEGOO. If it should not be linked like this, I am happy to take it down. -->
     
     Just remember the code in the PDF is written for Arduino and not MicroPython, so it won't work on the ESP32 as is!
-    - As well as the PDF there are also a whole load of datasheets, which might be helpful. Everything is included in a [Zip file](./resources/getting_started/Elegoo%20Electronics%20Fun%20Kit%20V1.0.19.09.10.zip).
+    - As well as the PDF there are also a whole load of datasheets, which might be helpful. Everything is included in a [Zip file](https://drive.google.com/file/d/13AD3Zw__2VklL8eoUGFsUzFPtmmjHRPP/view?usp=sharing). <!-- Link from ELEGOO website. I have a local copy of the zip downloaded, but not in github  -->
 
 3. The BME280 has lots of resources for using this with Arduino (e.g. from [SparkFun](https://learn.sparkfun.com/tutorials/sparkfun-bme280-breakout-hookup-guide/all)).
 
