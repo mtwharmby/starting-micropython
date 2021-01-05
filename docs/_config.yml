@@ -1,1 +1,4 @@
 theme: jekyll-theme-slate
+title: Micropython on ESP32
+description: A detailed explanation on how to get started with Micropython
+baseurl: /starting-micropython
