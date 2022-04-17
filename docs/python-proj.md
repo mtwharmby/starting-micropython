@@ -37,9 +37,11 @@ Once created you have to *activate* the virtual environment, which replaces the 
       Note that for both Windows and Linux, the path to the `venv` directory is relative to the current directory. You need to change directory so that running `ls` (on Linux) or `dir` (on Windows) shows the `venv` directory. 
 
     Once you have activated the virtual environment the terminal will have the name of the environment added before the directory so you can tell what the active environment is. The following shows a summary of the commands so far (the red underline is added for emphasis):
+
     ![Linux terminal with activated virtual environment venv](./resources/python-proj/activated_venv.PNG)
 
 5. If you want to change to another virtual environment or simply want to go back to the system python, without closing the terminal, you need to *deactivate* the virtual environment you are in. To do this simply run the command `deactivate` in the terminal. Afterward, the `(venv)` at the beginning of the line should have disappeared:
+
     ![Linux terminal: deactivating a virtual environment](./resources/python-proj/deactivate_venv.PNG)
 
 ## Installing Libraries
