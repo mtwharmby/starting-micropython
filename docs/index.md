@@ -13,6 +13,8 @@ This site is a guide for getting started using Micropython on an ESP32. We start
 
 4. Next can write more complicated programs, which don't require input from us to run (necessarily). Getting started with this is covered on the  [Project page](./project.md). *This bit is work in progress!*
 
+## Other Guides
+* [python Projects](./python-proj.md)
 
 ## Getting Started
 
