@@ -15,6 +15,7 @@ This site is a guide for getting started using Micropython on an ESP32. We start
 
 ## Other Guides
 * [python Projects](./python-proj.md)
+* [Using a BME280 sensor with python](./python-bme280.md)
 
 ## Getting Started
 
