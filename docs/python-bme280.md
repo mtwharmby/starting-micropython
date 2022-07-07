@@ -69,9 +69,13 @@ i2c = busio.I2C(board.SCL, board.SDA)    # 2
 bme280 = adafruit_bme280.Adafruit_BME280_I2C(i2c, 0x76)    # 3
 temp = bme280.temperature    # 4
 print("Temperature: " + str(temp))
-
 ```
-Some explanation, line by line:
+The code above should be saved into the file (for example `temperature.py`). You can run it in a terminal (in which you've activated the virtual environment) as follows:
+```bash
+(venv) $ python ./temperature.py
+```
+
+Some explanation of the code (the numbers in comments relate to the numbers belwo):
 1. The `adafruit_bme280` library doesn't import as nicely as most other libraries. The `from adafruit_bme280 import basic` part imports the `basic` module from `adafruit_bme280`. The `as adafruit_bme280` part allows us to interact with `basic` using the name `adafruit_bme280`. The idea of this is to make the code more readable
 2. `i2c = busio.I2C(board.SCL, board.SDA)` creates an object in python which gives access to the I<sup>2</sup>C bus on the python, using the pins defined by the board for **SCL** and **SDA**.
 3. `bme280 = adafruit_bme280.Adafruit_BME280_I2C(i2c, 0x76)` creates an object representing our BME280 sensor in python using the adafruit library. We tell the library to use the `i2c` object we created in (2) to communicate with the BME280. We also tell it that the address of the sensor is `0x76` (the library is set up for a sensor with I<sup>2</sup>C address `0x77`, so its important we tell it the correct address).
