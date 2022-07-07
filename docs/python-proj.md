@@ -34,7 +34,7 @@ Once created you have to *activate* the virtual environment, which replaces the 
       ```powershell
       .\venv\Scripts\activate
       ```
-      Note that for both Windows and Linux, the path to the `venv` directory is relative to the current directory. You need to change directory so that running `ls` (on Linux) or `dir` (on Windows) shows the `venv` directory. 
+      > Note that for both Windows and Linux, the path to the `venv` directory is relative to the current directory. You need to change directory so that running `ls` (on Linux) or `dir` (on Windows) shows the `venv` directory. 
 
     Once you have activated the virtual environment the terminal will have the name of the environment added before the directory so you can tell what the active environment is. The following shows a summary of the commands so far (the red underline is added for emphasis):
 
@@ -68,7 +68,8 @@ You will also likely see some websites telling you to use `sudo` with the `pip` 
   ```
 
 As virtual environments only contain the libraries necessary for a project it is sometimes helpful to see all of the libraries which are installed. Also when projects are shared with another developer, you don't typically share the virtual environment, but only the list of libraries needed. This can then be used to recreate the virtual environment on someone elses computer.
-- **Note:** This is also a good way to keep track of the libraries you're using and can be used as a backup, to recover the set of libraries which were needed for the project in case something horrible happens
+
+> **Note:** This is also a good way to keep track of the libraries you're using and can be used as a backup, to recover the set of libraries which were needed for the project in case something horrible happens
 
 * To list all the packages in a virtual environment:
   ```bash
@@ -94,10 +95,10 @@ As virtual environments only contain the libraries necessary for a project it is
     cd ~/python-project # Replace with the path to your project
     source venv/bin/activate
     ```
-    Note on Windows the command to activate is slightly different:
-    ```powershell
-    .\venv\Scripts\activate
-    ```
+    >Note, on Windows the command to activate is slightly different:
+    >```powershell
+    >.\venv\Scripts\activate
+    >```
 
 * *My python environment is knackered. I had lots of packages installed and I saved a list of them (`requirements.txt`). How do I get back up and running?*
   - Assuming you're in the directory containing your project, do the following:
@@ -107,3 +108,6 @@ As virtual environments only contain the libraries necessary for a project it is
     source venv/bin/activate
     pip install -r requirements.txt -v
     ```
+
+## Additional Resources
+* [Making Thonny work with virtual environments](https://www.roelpeters.be/associate-thonny-with-a-virtual-environment-on-raspberry-pi/)
